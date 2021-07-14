@@ -19,7 +19,7 @@
                         <div class="wide-search">
                             <p>찾으시는 주류가 있으신가요?</p>
                             <div class="wide-input">
-                                <input type="text"><button><i class="fas fa-search"></i></button>
+                                <input type="text"><button onclick="location.href='${pageContext.request.contextPath}/test'"><i class="fas fa-search"></i></button>
                             </div>
                         </div>
                     </div>
