@@ -6,7 +6,7 @@
   <!-- 마이바티스 설정파일 type에 명시된 클래스를 함축이름으로 사용합니다. -->
   <configuration>
   	<typeAliases>
-  		
+		<typeAlias type="com.team5.command.ProductVO" alias="ProductVO" />
   	</typeAliases>
   </configuration>
   	
