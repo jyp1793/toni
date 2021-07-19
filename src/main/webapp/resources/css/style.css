@@ -530,34 +530,30 @@ input[id="menuicon"]:checked+label{
     
     .junjoin {
         margin: 0 auto;
-        height: 700px;
+        height: 1200px;
     }
     .junjoin-wrap{
         margin: 0 auto;
         display: inline-block;
         overflow: hidden;
-        width: 30%;
-        margin-left: 35%;
+        width: 50%;
+        margin-left: 25%;
         height: 100%;
         padding-top: 2%;
     }
     
-    .junid,.junpw,.junpwCheck,.junbirth,.junadd,.junadd2 {
+    .junid,.junpw,.junpwCheck,.junbirth,.junadd,.junadd2,.junname,.junphone,.junaddnum,.junemail  {
         width: 100%;
         height: 50%;
         border: 3px solid rgb(240,220,220);
     }
-    .junid-form,.junpw-form,.junpwCheck-form,.junbirth-form,.junadd-form{
+    .junid-form,.junpw-form,.junpwCheck-form,.junbirth-form,.junadd-form,.junname-form,.junphone-form,.junaddnum-form,.junemail-form{
         width: 100%;
         text-align: left;
         padding: 0;
-        height: 15%;
+        height: 9%;
         margin-bottom: 5px;
         font-weight: bolder;
-    }
-    
-    .junadd {
-        margin-bottom: 5px;
     }
     
     
@@ -566,7 +562,7 @@ input[id="menuicon"]:checked+label{
         font-size: 60px;
     }
     
-    #junidCheck, .juncal {
+    .junidCheck, .juncal {
         margin-top: 2px;
         height: 45%;
         width: 48px;
@@ -593,7 +589,7 @@ input[id="menuicon"]:checked+label{
     
     .junjoin {
         margin: 0 auto;
-        height: 700px;
+        height: 1200px;
     }
     .junjoin-wrap{
         margin: 0 auto;
@@ -604,16 +600,16 @@ input[id="menuicon"]:checked+label{
         padding-top: 2%;
     }
     
-    .junid,.junpw,.junpwCheck,.junbirth,.junadd,.junadd2 {
+    .junid,.junpw,.junpwCheck,.junbirth,.junadd,.junadd2,.junname,.junphone,.junaddnum,.junemail {
         width: 100%;
         height: 50%;
         border: 3px solid rgb(240,220,220);
     }
-    .junid-form,.junpw-form,.junpwCheck-form,.junbirth-form,.junadd-form{
+    .junid-form,.junpw-form,.junpwCheck-form,.junbirth-form,.junadd-form,.junname-form,.junphone-form,.junaddnum-form,.junemail-form {
         width: 100%;
         text-align: left;
         padding: 0;
-        height: 15%;
+        height: 9%;
         margin-bottom: 5px;
         font-weight: bolder;
     }
@@ -628,7 +624,7 @@ input[id="menuicon"]:checked+label{
         font-size: 60px;
     }
     
-    #junidCheck, .juncal {
+    .junidCheck, .juncal {
         margin-top: 2px;
         height: 45%;
         width: 48px;

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
     <section class="junsec">
         <div>
             <div class="container"> 
@@ -12,8 +13,12 @@
                                 비밀번호<br/>
                                 <input type="password" class="form-control junpw">
                             </div>
+                            
                             <div class="col-sm-2 col-xs-6 junlogin-form">
                                 <button name="button" class="junlogin">로그인</button>
+                                <a id="custom-login-btn" href="javascript:loginWithKakao()" class="junkakao-btn">
+                                    <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="222" />
+                                </a>
                                 <input type="checkbox">로그인 상태 유지
                                 <input type="checkbox">아이디 유지
                             </div>
@@ -32,3 +37,4 @@
         </div>
 
     </section>
+

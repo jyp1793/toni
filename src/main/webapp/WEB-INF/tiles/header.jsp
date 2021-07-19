@@ -7,7 +7,7 @@
             <a href="${pageContext.request.contextPath }">Tonight</a>
         </div>
         <ul class="header-user">
-            <li><a href="${pageContext.request.contextPath }/user/userMainLogin">LOGIN</a></li>
+            <li><a href="${pageContext.request.contextPath }/user/userLogin">LOGIN</a></li>
             <li><a href="${pageContext.request.contextPath }/user/userJoin">JOIN</a></li>
             <li><a href="#">favorite</a></li>
             <li><a href="#">Q&A</a></li>
