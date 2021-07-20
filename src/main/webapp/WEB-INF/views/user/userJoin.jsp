@@ -6,13 +6,13 @@
        <div>
            <div class="container">
                <div class="row">
-                   <form action="joinForm" method="post">
+                   <form action="join" method="post">
                    <div class="junjoin">
                        <div class="col-sm-12 col-xs-12 junjoin-wrap">
                            <div class="col-sm-12 col-xs-12 junid-form">
                                아이디<br/>
                                <input type="text" class="form-control junid" id="userId" name="userId" placeholder="아이디는 4~8글자" style="display:inline-block">
-                               <button type="button" class="junidCheck" id="idCheck">중복확인</button>
+                               <button type="button" class="junidCheck" id="idCheck">중복</button>
                             </div>
                             <div class="col-sm-12 col-xs-12 junpw-form">
                                 비밀번호<br/>
@@ -62,15 +62,7 @@
         
         
         <script>
-        var joinbtn = document.getElementsByClassName("junjoinbtn");
-        console.log(joinbtn)
-        	 joinbtn[0].onclick = function() {
-
-        		var msg = '<u:out value="${msg }" />';
-        		if(msg != '') {
-        			alert(mag);
-        		}
-			}
+       
         
         //아이디 중복체크
        	var idCheck = document.getElementsByClassName("idCheck");

@@ -5,8 +5,8 @@
   
   <mapper namespace="com.team5.user.mapper.UserMapper">
   
-  	<insert id="join">
-  		insert into userjoin values (#{userId}, #{userPw}, #{userName}, #{userPhone}, #{userEmail}, #{addrZipNum}, #{addrBasic}, #{addrDetail}, #{birthday}) 
+  	<insert id="join" parameterType="com.team5.command.UserVO">
+  		insert into userjoin(userId, userPw, userName, userPhone, userEmail, addrZipNum, addrBasic, addrDetail, birthday) values (#{userId}, #{userPw}, #{userName}, #{userPhone}, #{userEmail}, #{addrZipNum}, #{addrBasic}, #{addrDetail}, #{birthday}) 
   	</insert>
   
   	<select id="idCheck" resultType="int">

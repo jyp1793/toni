@@ -60,17 +60,13 @@ public class UserController {
 	}
 	
 	//가입
-	@RequestMapping(value = "/userForm", method = RequestMethod.POST)
-	public String joinForm(UserVO vo, RedirectAttributes RA) {
+	@PostMapping("/join")
+	public String join(UserVO vo) {
+			
 		System.out.println(vo.toString());
 		int result = userService.join(vo);
-		
-		if(result == 1) {
-			RA.addFlashAttribute("msg", "가입을 축하합니다");
-		} else {
-			RA.addFlashAttribute("msg", "가입에 실패했습니다.");
-		}
-		
+		System.out.println(result);
+	
 		
 		return "redirect:/user/userLogin";
 	}

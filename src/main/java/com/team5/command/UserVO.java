@@ -1,7 +1,5 @@
 package com.team5.command;
 
-import java.sql.Timestamp;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,5 +17,5 @@ public class UserVO {
 	private String addrZipNum;
 	private String addrBasic;
 	private String addrDetail;
-	private Timestamp birthday;
+	private String birthday;
 }
