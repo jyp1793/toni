@@ -4,6 +4,7 @@ import com.team5.command.UserVO;
 
 public interface UserService {
 
-	public int join(UserVO vo);
 	public int idCheck(UserVO vo);
+	public int join(UserVO vo);
+	public UserVO loginCheck(UserVO vo);
 }

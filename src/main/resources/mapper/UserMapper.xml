@@ -13,4 +13,7 @@
   		select count(*) from userjoin where userId = #{userId}
   	</select>
   
+  <select id="loginCheck" resultType="UserVO">
+  	select * from userjoin where userId = #{userId} and userPw = #{userPw}
+  </select>
   </mapper>

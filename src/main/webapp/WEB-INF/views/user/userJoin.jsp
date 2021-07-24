@@ -62,13 +62,38 @@
         
         
         <script>
-       
-        
         //아이디 중복체크
-       	var idCheck = document.getElementsByClassName("idCheck");
-        idCheck[0].onclick = function() {
-        	
-        	var userId = document.getElementById("")
-        }
+       	$("#idCheck").click(function() {
+			
+       		var userId = $("#userId").val();
+       		
+       		if( userId == '' || userId.length < 4 || userId.length > 8) {
+       			$("#userId").focus();
+       			alert("아이디는 4~8글자입니다.");
+       			return;
+       		}
+       		
+       		$.ajax({
+       			type: "post",
+       			url : "idCheck",
+       			dataType : "json",
+       			contentType: "application/json",
+       			data : JSON.stringify({"userId" : userId}),
+       			success : function(data) {
+					
+       				if(data == 0) {
+       					alert("사용가능한 아이디입니다.");
+       				} else {
+       					alert("중복된 아이디입니다.");
+       				}
+       				
+				},
+				error : function(request,status, error) {
+					alert("에러발생");
+				}
+       		})
+       		
+		});
+        
         
         </script>
