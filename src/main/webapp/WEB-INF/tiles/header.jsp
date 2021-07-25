@@ -7,8 +7,16 @@
             <a href="${pageContext.request.contextPath }">Tonight</a>
         </div>
         <ul class="header-user">
+        <c:choose>
+        <c:when test="${sessionScope.userVO eq null }">
             <li><a href="${pageContext.request.contextPath }/user/userLogin">LOGIN</a></li>
             <li><a href="${pageContext.request.contextPath }/user/userJoin">JOIN</a></li>
+        </c:when>
+        <c:otherwise>
+        	<li>${sessionScope.userVO.userId}</li>
+            <li><a href="${pageContext.request.contextPath }/user/userLogout">LOGOUT</a></li>
+        </c:otherwise>
+        </c:choose>
             <li><a href="#">favorite</a></li>
             <li><a href="#">Q&A</a></li>
         </ul>

@@ -6,7 +6,7 @@
        <div>
            <div class="container">
                <div class="row">
-                   <form action="join" method="post">
+                   <form action="join" id="join" method="post">
                    <div class="junjoin">
                        <div class="col-sm-12 col-xs-12 junjoin-wrap">
                            <div class="col-sm-12 col-xs-12 junid-form">
@@ -49,7 +49,7 @@
                                 <input type="text" class="form-control junadd" name="addrDetail"><br/>
                                 상세주소<br/>
                                 <input type="text" class="form-control junadd2" name="birthday">
-                                <button type="submit" class="junjoinbtn">회원가입</button>
+                                <button type="button" class="junjoinbtn">회원가입</button>
                             </div>
                         </div>
                     </div>
@@ -82,6 +82,7 @@
        			success : function(data) {
 					
        				if(data == 0) {
+       					$("#userId").attr("readonly", true);
        					alert("사용가능한 아이디입니다.");
        				} else {
        					alert("중복된 아이디입니다.");
@@ -95,5 +96,30 @@
        		
 		});
         
+        //검증
+        $(".junjoinbtn").click(function() {
+        	
+        	var userId = $("#userId").val();
+        	
+        	if( $("#userId").attr("readonly") != 'readonly') {
+        		alert("아이디 중복체크가 필요합니다.");
+        		$("#userId").focus();
+        		return;
+        	} else if( $(".junpw").val() == '') {
+        		alert("비밀번호 입력은 필수입니다.");
+        		return;
+        	} else if( $(".junpw").val() != $(".junpwCheck").val() ) {
+        		alert("비밀번호가 같지 않습니다.");
+        		$(".junpw").focus();
+        		return;
+        	} else if( $(".junname").val() == '') {
+        		alert("이름은 필수입니다");
+        		return;
+        	} else {
+	       		$("#join").submit();
+	       		alert(userId + "님의 회원가입을 축하합니다.")
+        	}
+			
+		});
         
         </script>
