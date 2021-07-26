@@ -18,7 +18,7 @@ public class UserAuthHandler extends HandlerInterceptorAdapter{
 		//userVO
 		HttpSession session =  request.getSession(); //현재 세션
 		
-		UserVO userVO = (UserVO) session.getAttribute("userVO");
+		UserVO userVO = (UserVO)session.getAttribute("userVO");
 		
 		if( userVO == null) {
 			

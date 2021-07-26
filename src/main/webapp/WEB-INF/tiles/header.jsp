@@ -13,7 +13,7 @@
             <li><a href="${pageContext.request.contextPath }/user/userJoin">JOIN</a></li>
         </c:when>
         <c:otherwise>
-        	<li>${sessionScope.userVO.userId}</li>
+        	<li>${sessionScope.userVO.userId}님 환영합니다</li>
             <li><a href="${pageContext.request.contextPath }/user/userLogout">LOGOUT</a></li>
         </c:otherwise>
         </c:choose>

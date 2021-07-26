@@ -226,6 +226,9 @@ header .header-user li {
 header .header-user li a{
     color: white;
 }
+header .header-user li{
+    color: white;
+}
 
 .main-wide img{
     width: 100%;
